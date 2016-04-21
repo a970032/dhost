@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/libs/jquery/jquery.min.js" ></script>
+        <script type="text/javascript" src="dhostInputBox/dhostInputBox.js"></script>
+        <link href="dhostInputBox/dhostInputBox.css" rel="stylesheet" type="text/css" />
+        <style>
+            #input{
+                line-height:24px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#input').dhostInputBox({
+                    'icon': '',
+                    'iconClass': '',
+                    'text': 'good',
+                    'textClass': '',
+                    'html': '',
+                    'htmlClass': '',
+                    'hintsClass': '',
+                    'align':'top'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" name="name" id="input" />
+    </body>
+</html>

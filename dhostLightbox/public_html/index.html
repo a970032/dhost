@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="dhostLightbox/dhostLightbox.js" type="text/javascript"></script>
+        <link href="dhostLightbox/dhostLightbox.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.dhostLightbox').each(function () {
+                    $(this).dhostLightbox({
+                        'width': 300,
+                        'height': 300,
+                        'top': ($(window).height() / 2) - (300 / 2),
+                        'left': ($(window).width() / 2) - (300 / 2)
+                    });
+                });
+//                $('#link1').dhostLightbox({
+//                    'width': 300,
+//                    'height': 300,
+//                    'top': ($(window).width() / 2) - (300 / 2),
+//                    'left': ($(window).width() / 2) - (300 / 2)
+//                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <a class="dhostLightbox" href="#box1" data-rel="group1" >Link1</a>
+            <a class="dhostLightbox" href="#box2" data-rel="group1" >Link2</a>
+            <a class="dhostLightbox" href="#box3" data-rel="group1" >Link3</a>
+            <a class="dhostLightbox" href="#box4" data-rel="group1" >Link4</a><br />
+            
+            <a class="dhostLightbox" href="#box1" data-rel="group2" >Link1</a>
+            <a class="dhostLightbox" href="#box4" data-rel="group2" >Link4</a>
+            <a class="dhostLightbox" href="#box2" data-rel="group2" >Link2</a>
+            <a class="dhostLightbox" href="#box3" data-rel="group2" >Link3</a>
+        </div>
+        <div id="box1" style="display:none">
+            a
+        </div>
+        <div id="box2" style="display:none">
+            b
+        </div>
+        <div id="box3" style="display:none">
+            c
+        </div>
+        <div id="box4" style="display:none">
+            d
+        </div>
+    </body>
+</html>

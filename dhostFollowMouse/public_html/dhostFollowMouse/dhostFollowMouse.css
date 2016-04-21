@@ -1,0 +1,12 @@
+.mm-child{
+    transition:transform 0.1s ease-in;
+}
+.child{
+    width:100px;height:100px;background:white;position:absolute;top:calc(50% - 50px);left:calc(50% - 50px);z-index:3;
+}
+.child2{
+    width:200px;height:200px;background:black;position:absolute;top:calc(50% - 100px);left:calc(50% - 100px);z-index:2;
+}
+.child3{
+    width:300px;height:300px;background:white;position:absolute;top:calc(50% - 150px);left:calc(50% - 150px);z-index:1;
+}

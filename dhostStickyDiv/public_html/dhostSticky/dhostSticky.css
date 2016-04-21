@@ -1,0 +1,23 @@
+#dhostSticky1.stickied{
+    position:fixed;
+    top:0px;
+    width:100%;
+}
+#dhostSticky2.stickied{
+    position:fixed;
+    top:100px;
+    width:100%;
+    background:red;
+}
+#dhostSticky3.stickied{
+    position:fixed;
+    top:200px;
+    width:100%;
+    background:green;
+}
+#dhostSticky4.stickied{
+    position:fixed;
+    top:300px;
+    width:100%;
+    background:blue;
+}

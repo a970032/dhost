@@ -1,0 +1,98 @@
+.dhostSlider,.dhostSlider .wrapper{
+    position:relative;
+    overflow: hidden;
+}
+.dhostSlider{
+    /*width must define when vertical is false;*/
+    /*height must define when vertical is true;*/
+    width: 1024px;
+    height:768px;
+}
+.dhostSlider .dot{
+    width:10px;
+    height:10px;
+    background-color:#c7c7c7;
+    border-radius: 5px;
+    margin-left:10px;
+}
+.dhostSlider .wrapper{
+    display:flex;
+    transition: left 0.2s,top 0.2s;
+    left:0;
+    top:0;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+.dhostSlider .wrapper > *{
+    flex-shrink: 0;
+    max-width:100%;
+    max-height:100%;
+}
+.dhostSlider .dotWrapper{
+    position:absolute;
+    height:10px;
+    display:flex;
+    bottom:20px;
+    left: 40%;
+}
+.dhostSlider .dot.selected{
+    background-color:#fc9fc0;
+}
+.dhostSlider.vertical .wrapper{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+}
+.dhostSlider.vertical .dotWrapper{
+    width:10px;
+    height:auto;
+    bottom:auto;
+    right:20px;
+    left:auto;
+    top:40%;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+}
+.dhostSlider.vertical .dot{
+    margin-left:0;
+    margin-top:5px;
+}
+.dhostSlider.thumbList{
+    /*width must define when vertical is false;*/
+    /*height must define when vertical is true;*/
+    width: 1024px;
+    height:100px;
+}
+.dhostSlider.vertical.thumbList{
+    /*width must define when vertical is false;*/
+    /*height must define when vertical is true;*/
+    width: 100px;
+    height:768px;
+}
+.thumbList.vertical.dhostSlider .wrapper > *{
+    max-width:100px;
+    margin-top:10px;
+    max-height: 100px;
+    margin-left:0;
+}
+.thumbList.vertical.dhostSlider .wrapper > :first-child{
+    margin-top:0;
+}
+.thumbList.dhostSlider .wrapper > *{
+    max-width:100px;
+    margin-left:10px;
+    max-height: 100px;
+    margin-top:0;
+}
+.thumbList.dhostSlider .wrapper > :first-child{
+    margin-left:0;
+}

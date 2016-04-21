@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="dhostSpinner/dhostSpinner.js" type="text/javascript"></script>
+        <link href="dhostSpinner/dhostSpinner.css" rel="stylesheet" type="text/css" />
+        <script type='text/javascript'>
+            var spinner;
+            $(document).ready(function () {
+                $('.dhostSpinner').each(function () {
+                    spinner=$(this).dhostSpinner({
+                    });
+                });
+            });
+        </script>
+        <style>
+            #center{
+                position:absolute;
+                top:50%;
+                left:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='center'>
+            <select class='dhostSpinner'>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select>
+        </div>
+    </body>
+</html>

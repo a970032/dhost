@@ -1,0 +1,136 @@
+.dc-wrapper *{
+    box-sizing: border-box;
+}
+.dc-wrapper{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    width:100%; 
+    position:relative;
+}
+.dc-wrapper .title,.dc-wrapper .yearMonth{
+    line-height:20px;
+    font-weight:bold;
+    font-size:15px;
+    text-align: center;
+}
+.dc-wrapper .week{
+    display:flex;
+    flex-direction: row;
+    align-items:stretch;
+}
+.dc-wrapper .weekItem{
+    line-height:40px;
+    font-size:20px;
+    font-weight:bold;
+    background:red;
+    text-align: center;
+    border:1px solid white;
+    min-width:14%;
+}
+.dc-wrapper .day{
+    display:flex;
+    flex-direction: row;
+    align-items:stretch;
+    flex-wrap: wrap;
+}
+.dc-wrapper .dayItem{
+    background:lightgoldenrodyellow;
+    text-align: left;
+    border:1px solid white;
+    width:14%;
+    padding-left:5px;
+    padding-right:5px;
+    min-height:100px;
+    position:relative;
+}
+.dc-wrapper .dayItem .title{
+    line-height:20px;
+    font-size:15px;
+    font-weight:bold;
+    text-align: left;
+    cursor: pointer;
+}
+.dc-wrapper .dayItem.empty{
+    background:transparent;
+}
+.dc-wrapper .event{
+    display:flex;
+    flex-direction: column;
+}
+.dc-wrapper .event .eventItem{
+    background:aqua;
+    font-size:17px;
+    color:black;
+    margin-top:5px;
+    word-break: break-all;
+    z-index: 99;
+    font-weight:bold;
+    cursor: pointer;
+}
+.dc-wrapper .event .eventItem.across{
+    /*position:absolute;*/
+    width: 109%;
+}
+.dc-wrapper .dayItem.last .event .eventItem.across{
+    width:90%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dc-wrapper .dayItem.first .event .eventItem.across.continue{
+    width:90%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 10px;
+}
+.dc-wrapper .mask{
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    z-index:999;
+    display:none;
+}
+.dc-wrapper .mask .dayView,.dc-wrapper .mask .eventView{
+    background:black;
+    width:400px;
+    position:absolute;
+    top:20px;
+    left:calc(50% - 200px);
+    height:500px;
+    overflow-y:auto;
+}
+.dc-wrapper .mask .dayView .dv-wrapper{
+    height:1200px;/*50px*24*/
+}
+.dc-wrapper .mask .dayView .dv-wrapper .dayViewItem{
+    height:50px;
+    border-bottom: 1px solid grey;
+    position:relative;
+    background:white;
+    color:black;
+}
+.dc-wrapper .mask .dayView .dv-wrapper .dayEventItem{
+    position:absolute;
+    top:0;
+    left:0;
+    height:50px;
+    width:90%;
+    padding-left:10px;
+    border:1px solid red;
+    opacity: 0.5;
+    margin-left:10%;
+}
+.dc-wrapper .mask .eventView{
+    padding:20px;
+    background:white;
+    color:black;
+    font-size:18px;
+}

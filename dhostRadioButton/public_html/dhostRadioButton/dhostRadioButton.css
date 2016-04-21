@@ -1,0 +1,17 @@
+.checkbox{
+    width:16px;
+    height:16px;
+    background:black;
+}
+.checkbox.checked:after{
+    width: 15px;
+}
+.checkbox:after{
+    content: "";
+    background-image: url(checked.png);
+    width: 0;
+    height: 15px;
+    position: absolute;
+    background-size:15px 15px;
+    transition: width 0.2s ease-in;
+}

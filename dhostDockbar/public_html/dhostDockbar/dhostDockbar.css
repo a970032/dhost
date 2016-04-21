@@ -1,0 +1,14 @@
+.dockbar{
+/*    -webkit-transition: -webkit-transform ease-in-out 0.2s;
+    transition: transform ease-in-out 0.2s;
+    transform-origin: center;
+    transform: scale(0.5);*/
+}
+.dockbar:hover{
+    /*transform: scale(1);*/
+}
+.dockbar > *{
+    -webkit-transition: -webkit-transform ease-in-out 0.2s;
+    transition: transform ease-in-out 0.2s;
+    transform-origin: 50% 50%;
+}

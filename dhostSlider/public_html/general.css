@@ -1,0 +1,229 @@
+.flexTop{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+}
+.floatBottom{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:reverse;
+    -webkit-flex-direction:column-reverse;
+    -ms-flex-direction:column-reverse;
+    flex-direction:column-reverse;
+}
+.flexLeft{
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction:row;
+}
+.flexRight{
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:reverse;
+    -webkit-flex-direction:row-reverse;
+    -ms-flex-direction:row-reverse;
+    flex-direction:row-reverse;
+}
+.flexJustifySpace{
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+}
+.flexJustifyRight{
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end; 
+    justify-content: flex-end;
+}
+.flexJustifySpaceAround{
+    -webkit-justify-content:space-around;
+    -ms-flex-pack:distribute;
+    justify-content:space-around;
+}
+.flexJustifyContent{
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+}
+.flexFill{
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.flexGrow1{
+    -webkit-box-flex:1;
+    -webkit-flex-grow:1;
+    -ms-flex-positive:1;
+    flex-grow:1;
+}
+.flexGrow2{
+    -webkit-box-flex:2;
+    -webkit-flex-grow:2;
+    -ms-flex-positive:2;
+    flex-grow:2;
+}
+.flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /*display: flexbox;*/
+}
+.flexwrap{
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+.flexAlignItemHorizontal{
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+.flexAlignItemVertical{
+    -webkit-align-content:center;
+    -ms-flex-line-pack:center;
+    align-content:center;
+}
+.flexAlignItemEnd{
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end; 
+    align-items: flex-end;
+}
+.flexAlignItemStart{
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.flexAlignSelfCenter{
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.flexEnd{
+    -webkit-align-self:flex-end;
+    -ms-flex-item-align:end;
+    align-self:flex-end;
+}
+.flexShrink{
+    -webkit-flex-shrink:0;
+    -ms-flex-negative:0;
+    flex-shrink:0;
+}
+.flexShrink100{
+    -webkit-flex-shrink:100;
+    -ms-flex-negative:100;
+    flex-shrink:100;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+.marginTopBottom{
+    margin: 10px 0;
+}
+.padding0{
+    padding:0 !important;
+}
+.textAlignRight{
+    text-align:right;   
+}
+.textAlignLeft{
+    text-align:left;   
+}
+.textAlignCenter{
+    text-align:center;   
+}
+.boldText{
+    font-weight:bold;
+}
+.red,.error{
+    color:red !important;
+}
+.white{
+    color:white !important;
+}
+.error{
+    display:inline-block;
+}
+.verticalSub{
+    vertical-align: sub;
+}
+.verticalMiddle{
+    vertical-align: middle;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+.marginAuto{
+    margin:0 auto;
+}
+.margin0{
+    margin:0 !important;
+}
+.italic{
+    font-style:italic;
+}
+.displayNone{
+    display:none !important;
+}
+.verticalTop{
+    vertical-align: top;
+}
+.colorInherit{
+    color:inherit !important;
+}
+.insidePadding{
+    padding:15px;
+}
+.paddingR0{
+    padding-right:0 !important;
+}
+.marginTop{
+    margin-top:25px;
+}
+.marginLeft{
+    margin-left:25px;
+}
+.marginRight{
+    margin-right:25px;
+}
+.marginBottom{
+    margin-bottom:25px;
+}
+.positionRelative{
+    position:relative;
+}
+.fontsizeInherit{
+    font-size: inherit;
+}
+.displayBlock{
+    display:block !important;
+}
+.mobileOnly{
+    display:none;
+}
+.positionAbsolute{
+    position:absolute;
+}
+.width100{
+    width:100%;
+}
+.whiteSpaceNoWrap{
+    white-space: nowrap;
+}

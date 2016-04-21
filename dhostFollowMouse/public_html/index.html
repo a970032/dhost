@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="dhostFollowMouse/dhostFollowMouse.js" type="text/javascript"></script>
+        <link href="dhostFollowMouse/dhostFollowMouse.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('body').dhostFollowMouse({
+                    'ratio': 0.1,
+                    'revert': true,
+                    'backToOrgin': false,
+                    'selector': '.child'
+                });
+                $('body').dhostFollowMouse({
+                    'ratio': 0.09,
+                    'revert': true,
+                    'backToOrgin': false,
+                    'selector': '.child2'
+                });
+                $('body').dhostFollowMouse({
+                    'ratio': 0.08,
+                    'revert': true,
+                    'backToOrgin': false,
+                    'selector': '.child3'
+                });
+            });
+        </script>
+    </head>
+    <body style='background: black;height:870px'>
+        <div class='child'>
+
+        </div>
+        <div class='child2'>
+
+        </div>
+        <div class='child3'>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/libs/jquery/jquery.min.js" ></script>
+        <script type="text/javascript" src="dhostSelect/dhostSelect.js"></script>
+        <link href="dhostSelect/dhostSelect.css" rel="stylesheet" type="text/css" />
+        <style>
+            .dhostSelect{
+                width:200px;
+                line-height:30px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#select1').dhostSelect();
+            });
+        </script>
+    </head>
+    <body>
+        <select style="display: none" id="select1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+    </body>
+</html>

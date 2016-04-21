@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="dhostSlider/dhostSlider.js" type="text/javascript"></script>
+        <link href="dhostSlider/dhostSlider.css" rel="stylesheet" type="text/css" />
+        <link href="general.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            var slider;
+            $(document).ready(function () {
+                slider = $('#slider').dhostSlider({
+                    'right': '.right',
+                    'left': '.left',
+                    'dot': true,
+                    'wrapper': '.wrapper',
+                    'selector': 'img',
+                    'vertical': false,
+                    'top': '.top',
+                    'bottom': '.bottom'
+                });
+                thumb = $('#thumbList').dhostSlider({
+                    'right': '.right2',
+                    'left': '.left2',
+                    'dot': false,
+                    'wrapper': '.wrapper',
+                    'selector': 'img',
+                    'vertical': false,
+                    'top': '.top2',
+                    'bottom': '.bottom2',
+                    'thumbnailList': true,
+                    'moveFixed': 100,
+                    'onClick': function (element, index) {
+                        console.log('clicked2');
+                        slider.goTo(index);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="flex flexTop">
+            <div class="flex flexTop">
+                <div id="slider" class="dhostSlider">
+                    <div class="wrapper">
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                    </div>
+                </div>
+                <div>
+                    <a class="left" href="javascript:;">Left</a>
+                    <a class="right" href="javascript:;">Right</a>
+                    <a class="top" href="javascript:;">Top</a>
+                    <a class="bottom" href="javascript:;">Bottom</a>
+                </div>
+            </div>
+            <div class="flex flexTop">
+                <div id="thumbList" class="thumbList dhostSlider">
+                    <div class="wrapper">
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                        <img src="http://lorempixel.com/1024/768/" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a class="left2" href="javascript:;">Left</a>
+                <a class="right2" href="javascript:;">Right</a>
+                <a class="top2" href="javascript:;">Top</a>
+                <a class="bottom2" href="javascript:;">Bottom</a>
+            </div>
+        </div>
+    </body>
+</html>
